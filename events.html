@@ -5,7 +5,36 @@
         <title></title>
     </head>
     <body>
-        <button id="myButton">click me</button>
+        <div>
+            <button id="myButton">clique moi</button>
+        </div>
+
+        <div>
+            <input type="text" id="login" name="login" value="" placeholder="login" /> <span id="login-size">0</span>
+        </div>
+
+        <div>
+            <form id="form" method="post">
+                <input type="text" id="firstname" name="firstname" value="" placeholder="prénom" />
+                <input type="text" id="lastname" name="lastname" value="" placeholder="nom" />
+                <button id="submit" type="submit">Valider</button>
+            </form>
+        </div>
+
+        <div>
+            <form id="fruits-form" method="post">
+                <label>
+                    <input type="checkbox" name="fruits[]" value="1"> pomme
+                 </label>
+                <label>
+                    <input type="checkbox" name="fruits[]" value="2"> poire
+                 </label>
+                <label>
+                    <input type="checkbox" name="fruits[]" value="3"> banane
+                </label>
+                <button type="submit">Valider</button>
+            </form>
+        </div>
 
         <script type="text/javascript" src="/js/events.js"></script>
     </body>

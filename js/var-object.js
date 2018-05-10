@@ -57,10 +57,15 @@ var voiture = {
     ]
 };
 
-// accès à la variable "marque" en mode attribut
+// accès en lecture à la variable "marque" en mode attribut
 console.log(voiture.marque);
-// accès à la variable "marque" en mode clé alphanumérique
+// accès en lecture à la variable "marque" en mode clé alphanumérique
 console.log(voiture["marque"]);
+
+// accès en écriture (c-à-d modification) à la variable "marque" en mode attribut
+voiture.marque = 'autre marque';
+// accès en écriture (c-à-d modification) à la variable "marque" en mode clé alphanumérique
+voiture["marque"] = 'autre marque';
 
 // sérialisation d'une variable de type Object
 var voitureSerialized = JSON.stringify(voiture);
@@ -71,3 +76,4 @@ console.log(voitureSerialized);
 var yesno = {"answer":"yes","forced":false,"image":"https://yesno.wtf/assets/yes/5-64c2804cc48057b94fd0b3eaf323d92c.gif"};
 
 console.log(yesno);
+
