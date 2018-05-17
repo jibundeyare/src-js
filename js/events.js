@@ -49,7 +49,7 @@ login.addEventListener('keyup', onKeyEventHandler);
  */
 
 function onSubmitHandler(event) {
-    // la méthode preventDefault() désactive la propagation de l'évènement et empêche le comportement normal (par défaut) de l'élément qui a généré l'évènement
+    // la méthode preventDefault() empêche le comportement normal (par défaut) de l'élément qui a généré l'évènement
     // en bloquant un évènement de type submit, on empêche le navigateur d'envoyer les données du formulaire
     event.preventDefault();
 
